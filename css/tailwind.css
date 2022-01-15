@@ -477,12 +477,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
-.grow {
-  flex-grow: 1;
+.basis-1\/3 {
+  flex-basis: 33.333333%;
 }
 
 .basis-2\/6 {
@@ -493,20 +489,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-basis: 16.666667%;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
+.basis-2\/3 {
+  flex-basis: 66.666667%;
 }
 
 .flex-col {
@@ -517,29 +501,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-36 {
-  padding-left: 9rem;
-  padding-right: 9rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .px-5 {
@@ -547,20 +516,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.25rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pb-7 {
   padding-bottom: 1.75rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -584,11 +550,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-xs {
@@ -624,7 +585,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .skill-image {
-  max-width: 45px;
+  max-width: 40px;
 }
 
 .skills li::before {
@@ -640,4 +601,5 @@ Ensure the default browser behavior of the `hidden` attribute.
   /* Also needed for space (tweak if needed) */
   margin-left: -1em;
   /* Also needed for space (tweak if needed) */
+  padding-right: 1em;
 }

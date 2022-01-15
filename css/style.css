@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .skill-image {
-  max-width: 45px;
+  max-width: 40px;
 }
 .skills li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
@@ -12,4 +12,5 @@
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
+  padding-right: 1em;
 }

@@ -10,23 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 
     <!-- Link CSS & Tailwind CSS -->
     <link rel="stylesheet" href="css/tailwind.css">
-    <link rel="stylesheet" href="css/style.css">
 
     <title>Gianfrancogv</title>
 </head>
 <body class="font-poppins">
 
-    <!-- Skills & education -->
-    <div class="skills-experience flex px-24 py-8">
+    <!-- Skills & Experience -->
+    <div class="skills-experience flex items-center px-24 py-8 h-screen">
 
         <!-- Left Column -->
-        <div class="left-col basis-1/3">
+        <div class="left-col basis-1/3 h-fit">
 
             <!-- Header H1 -->
-            <div class="header text-7xl pb-7 font-semibold text-primaryblue">
+            <div class="header text-7xl pb-7 font-bold text-primaryblue">
                 <h1>Skills & Experience</h1>
             </div>
 
@@ -39,7 +39,7 @@
             <ul class="skills">
 
                 <!-- Subheader H2 -->
-                <h2 class="subheader text-4xl font-semibold text-primaryblue">Skills</h2>
+                <h2 class="subheader text-4xl font-bold text-primaryblue">Skills</h2>
 
                 <!-- Skills list items -->
 
@@ -48,6 +48,10 @@
                     <li class="skills-group flex basis-2/6 items-center text-md font-semibold text-primaryblue">
                         Web Development:
                     </li>
+                    <div class="skills-items flex flex-col basis-1/6">
+                        <img class="skill-image mx-auto" src="assets/img/wordpress.png" alt="Wordpress">
+                        <h5 class="skill-title text-xs text-center">Wordpress</h5>
+                    </div>
                     <div class="skills-items flex flex-col basis-1/6">
                         <img class="skill-image mx-auto" src="assets/img/html.png" alt="HTML5">
                         <h5 class="skill-title text-xs text-center">HTML</h5>
@@ -60,16 +64,16 @@
                         <img class="skill-image mx-auto" src="assets/img/js.png" alt="JavaScript">
                         <h5 class="skill-title text-xs text-center">Javascript</h5>
                     </div>
-                    <div class="skills-items flex flex-col basis-1/6">
-                        <img class="skill-image mx-auto" src="assets/img/wordpress.png" alt="Wordpress">
-                        <h5 class="skill-title text-xs text-center">Wordpress</h5>
-                    </div>
                 </div>
                 <!-- Group 2 (Tools & Frameworks) -->
                 <div class="skills-grid flex pl-5 py-2 border-b-2 border-secondaryred">
                     <li class="skills-group flex basis-2/6 items-center text-md font-semibold text-primaryblue">
                         Tools and Frameworks:
                     </li>
+                    <div class="skills-items flex flex-col basis-1/6">
+                        <img class="skill-image mx-auto" src="assets/img/elementor.png" alt="Elementor">
+                        <h5 class="skill-title text-xs text-center">Elementor</h5>
+                    </div>
                     <div class="skills-items flex flex-col basis-1/6">
                         <img class="skill-image mx-auto" src="assets/img/bootstrap.png" alt="Bootstrap">
                         <h5 class="skill-title text-xs text-center">Bootstrap</h5>
@@ -81,10 +85,6 @@
                     <div class="skills-items flex flex-col basis-1/6">
                         <img class="skill-image mx-auto" src="assets/img/jquery.png" alt="jQuery">
                         <h5 class="skill-title text-xs text-center">jQuery</h5>
-                    </div>
-                    <div class="skills-items flex flex-col basis-1/6">
-                        <img class="skill-image mx-auto" src="assets/img/elementor.png" alt="Elementor">
-                        <h5 class="skill-title text-xs text-center">Elementor</h5>
                     </div>
                 </div>
                 <!-- Group 3 (Design) -->
@@ -132,7 +132,7 @@
                     </div>
                 </div>
                 <!-- Coming soon... -->
-                <div class="text-sm pt-3">
+                <div class="text-sm pt-3 italic">
                     Coming soon: Sass, Vue.js, React.js, Node.js, MySQL...
                 </div>
 
@@ -141,10 +141,10 @@
         </div>
 
         <!-- Right Column -->
-        <div class="right-col basis-2/3 pl-20">
+        <div class="right-col basis-2/3 h-fit pl-20">
             
             <!-- Subheader H2 -->
-            <h2 class="subheader text-4xl font-semibold text-primaryblue">Work Experience</h2>
+            <h2 class="subheader text-4xl font-bold text-primaryblue">Work Experience</h2>
             
             <!-- Experience List Items -->
             <ol class="experience-grid flex flex-col px-5 pb-5">
@@ -183,22 +183,22 @@
 
     </div>
 
-    <!-- Portfolio -->
-    <div class="portfolio flex px-24 py-8">
+    <!-- Education -->
+    <div class="education flex items-center px-24 py-8 h-screen">
 
         <!-- Left Column -->
-        <div class="left-col basis-1/3">
+        <div class="left-col basis-1/3 h-fit">
             
             <!-- Header H1 -->
-            <div class="header text-7xl pb-7 font-semibold text-primaryblue">
-                <h1>Education & Languages</h1>
+            <div class="header text-7xl pb-7 font-bold text-primaryblue">
+                <h1><span style="white-space: nowrap;">Education &</span> Languages</h1>
             </div>
+           
+            <!-- Courses list -->
+            <ul class="courses">
 
-            <!-- Subheader H2 -->
-            <h2 class="subheader text-4xl font-semibold text-primaryblue">Courses</h2>
-                
-                <!-- Courses list -->
-                <ul class="courses">
+                <!-- Subheader H2 -->
+                    <h2 class="subheader text-4xl font-bold text-primaryblue">Courses</h2>
     
                     <!-- Courses list items -->
                     <div class="courses-group flex flex-col pl-5 py-2">
@@ -206,7 +206,7 @@
                         <p class="text-sm text-fontgray">Platzi - 🗓️ September 2018 - January 2019</p>
                     </div>
                     <div class="courses-group flex flex-col pl-5 py-2">
-                        <li class="courses-text items-center text-xl font-semibold text-primaryblue">CSS (Responsive design, group, flexbox...)</li>
+                        <li class="courses-text items-center text-xl font-semibold text-primaryblue">CSS (Responsive design, grid, flexbox...)</li>
                         <p class="text-sm text-fontgray">Platzi - 🗓️ January 2019 - February 2019</p>
                     </div>
                     <div class="courses-group flex flex-col pl-5 py-2">
@@ -227,52 +227,154 @@
         </div>
 
         <!-- Right Column -->
-        <div class="right-col basis-2/3 pl-20">
+        <div class="right-col basis-2/3 pl-20 h-fit">
             
             <!-- Education -->
-            <!-- Subheader H2 -->
-            <h2 class="subheader text-4xl font-semibold text-primaryblue">Education</h2>
-
-            <ul class="education pb-5">
+            <ul class="education-list">
+                <!-- Subheader H2 -->
+                <h2 class="subheader text-4xl font-bold text-primaryblue">Education</h2>
                 <!-- Education list items -->
                 <li class="education-item text-xl font-semibold text-primaryblue border-b-2 border-secondaryred py-5">
                     Civil Engineering
-                    <p class="text-sm font-normal text-fontgray">Completed 5 of 10 semesters (all basic engineering branches). Concerning technology: Basic fundamentals of programming and sofware engineering, databases, C++ language.</p>
-                    <p class="text-sm font-normal text-right italic text-fontgray"><span class="not-italic">📍</span> Universidad del Táchira UNET - Venezuela</p>
+                    <p class="text-sm font-normal text-fontgray">6/10 blocks completed (all basic engineering branches). Concerning technology: Basic fundamentals of programming and sofware engineering, databases, C++ language.</p>
+                    <p class="pt-3 text-sm font-normal text-right italic text-fontgray"><span class="not-italic">📍</span> Universidad del Táchira UNET - Venezuela</p>
                     <p class="text-sm font-normal text-right italic text-fontgray"><span class="not-italic">🗓️</span> 2008 - 2014 (Abandoned)</p>
                 </li>
                 <li class="education-item text-xl font-semibold text-primaryblue border-b-2 border-secondaryred py-5">
                     Full-Stack Web Development
                     <p class="text-sm font-normal text-fontgray">HTML, CSS, Javascript. Responsive design. jQuery. Databases management with MySQL, back-end with node.js and express.js. Object-oriented programming, design patterns, APIs, testing with Mocha and Chai, Git and Github. Certified career by big companies like Mercadolibre and Globant.</p>
-                    <p class="text-sm font-normal text-right italic text-fontgray"><span class="not-italic">📍</span> Acámica - Buenos Aires, Argentina</p>
+                    <p class="pt-3 text-sm font-normal text-right italic text-fontgray"><span class="not-italic">📍</span> Acámica - Buenos Aires, Argentina</p>
                     <p class="text-sm font-normal text-right italic text-fontgray"><span class="not-italic">🗓️</span> September 2018 - June 2019</p>
                 </li>
             </ul>
 
+            
             <!-- Languages -->
-            <!-- Subheader H2 -->
-            <h2 class="subheader text-4xl font-semibold text-primaryblue">Languages</h2>
-
-            <ul class="languages">
-    
+            <ul class="languages flex-col">
+                <!-- Subheader H2 -->
+                <h2 class="subheader text-4xl pt-5 font-bold text-primaryblue">Languages</h2>
+                
                 <!-- languages list items -->
-                <div class="languages-group flex flex-col pl-5 py-2">
-                    <li class="languages-text items-center text-xl font-semibold text-primaryblue">Spanish</li>
-                    <p class="text-sm text-fontgray">Native</p>
-                </div>
-                <div class="languages-group flex flex-col pl-5 py-2">
-                    <li class="languages-text items-center text-xl font-semibold text-primaryblue">English</li>
-                    <p class="text-sm text-fontgray">Advanced</p>
-                </div>
-                <div class="languages-group flex flex-col pl-5 py-2">
-                    <li class="languages-text items-center text-xl font-semibold text-primaryblue">Italian</li>
-                    <p class="text-sm text-fontgray">Intermediate</p>
+                <div class="flex flex-row justify-between py-5">
+                    <div class="languages-group flex flex-row px-5 py-2">
+                        <div class="flex flex-col mr-3">
+                            <li class="languages-text items-center text-xl font-semibold text-primaryblue">Spanish</li>
+                            <p class="text-sm text-fontgray">Native</p>
+                        </div>
+                        <img width="45" src="assets/img/spanish.svg" alt="spanish">
+                    </div>
+                    <div class="languages-group flex flex-row px-5 py-2">
+                        <div class="flex flex-col mr-3">
+                            <li class="languages-text items-center text-xl font-semibold text-primaryblue">English</li>
+                            <p class="text-sm text-fontgray">Advanced</p>
+                        </div>
+                        <img width="45" src="assets/img/english.svg" alt="english">
+                    </div>
+                    <div class="languages-group flex flex-row px-5 py-2">
+                        <div class="flex flex-col mr-3">
+                            <li class="languages-text items-center text-xl font-semibold text-primaryblue">Italian</li>
+                            <p class="text-sm text-fontgray">Intermediate</p>
+                        </div>
+                        <img width="45" src="assets/img/italian.svg" alt="italian">
+                    </div>
                 </div>
 
             </ul>
         
         </div>
 
+    </div>
+
+    <!-- Portfolio -->
+    <div class="portfolio flex flex-col px-24 py-8 h-screen">
+
+        <!-- Header H1 -->
+        <div class="header text-7xl pb-7 font-bold text-primaryblue">
+            <h1>Latest Projects</h1>
+        </div>
+
+        <div class="flex h-max">
+
+            <!-- First Item -->
+            <div class="portfolio-items mx-5 relative top-60">
+                <a href="https://rohanacademy.com/" target="_blank">
+                    <h3 class="education-item text-xl font-semibold text-primaryblue border-t-2 border-secondaryred py-3">Rohan Academy</h3>
+                    <img class="border-secondaryred border-2" src="assets/img/portfolio/rohan.jpg" alt="rohan">
+                </a>
+                <p class="text-sm font-normal text-fontgray py-3">Responsive website with HTML, CSS, Bootstrap and Javascript.</p>
+            </div>
+            <!-- Second Item -->
+            <div class="portfolio-items mx-5 relative top-40">
+                <a href="https://projects.nerdpilots.com/gian/" target="_blank">
+                    <h3 class="education-item text-xl font-semibold text-primaryblue border-t-2 border-secondaryred py-3">The Cleaning House</h3>
+                    <img class="border-secondaryred border-2" src="assets/img/portfolio/the-cleaning-co.jpg" alt="The Cleaning House">
+                </a>
+                <p class="text-sm font-normal text-fontgray py-3">Responsive website created with Wordpress using Elementor.</p>
+            </div>
+            <!-- Third Item -->
+            <div class="portfolio-items mx-5 relative top-20">
+                <a href="https://residentpet.net/" target="_blank">
+                    <h3 class="education-item text-xl font-semibold text-primaryblue border-t-2 border-secondaryred py-3">Resident Pet</h3>
+                    <img class="border-secondaryred border-2" src="assets/img/portfolio/resident-pet.jpg" alt="resident pet">
+                </a>
+                <p class="text-sm font-normal text-fontgray py-3">Convertlabs booking website created with Wordpress themes.</p>
+            </div>
+            <!-- Fourth Item -->
+            <div class="portfolio-items mx-5">
+                <a href="https://reservando.vercel.app/html" target="_blank">
+                    <h3 class="education-item text-xl font-semibold text-primaryblue border-t-2 border-secondaryred py-3">Reservando</h3>
+                    <img class="border-secondaryred border-2" src="assets/img/portfolio/reservando.jpg" alt="reservando">
+                </a>
+                <p class="text-sm font-normal text-fontgray py-3">JavaScript page to manage restaurant reservations.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="contact flex px-24 py-8 h-screen">
+
+        <!-- Left Column -->
+        <div class="left-col basis-1/3 h-fit flex flex-col justify-center"> 
+
+            <!-- Header -->
+            <div class="header text-7xl font-bold text-primaryblue">
+                <h1>Contact Me</h1>
+            </div>
+
+            <!-- Subheader -->
+            <div class="subheader">
+                <p class="text-lg font-normal text-fontgray py-3">Have a question or want to work together? ✉️</p>
+            </div>
+
+            <!-- Form -->
+            <form action="https://formspree.io/xdowgkyr" method="POST" class="contact-form">
+
+                <div>
+                    <label for="name" class="block text-sm">What's your name?</label>
+                    <div class="mt-1 mb-3">
+                        <input type="text" id="name" name="name" autocomplete="name" placeholder="John Doe" required class="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-secondaryred focus:ring-1 focus:ring-secondaryred" />
+                    </div>
+                    <label for="email" class="block text-sm">What's your email?</label>
+                    <div class="mt-1 mb-3">
+                        <input type="text" id="email" name="email" autocomplete="email" placeholder="johndoe@email.com" required class="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-secondaryred focus:ring-1 focus:ring-secondaryred" />
+                    </div>
+                    <label for="message" class="block text-sm">Your message</label>
+                    <div class="mt-1 mb-3">
+                        <textarea name="message" id="message" class="h-full w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-secondaryred focus:ring-1 focus:ring-secondaryred"></textarea>
+                    </div>
+                    <button type="submit" id="button" class="w-full py-2 bg-secondaryred rounded-lg text-white border-secondaryred border-2 hover:bg-white hover:text-secondaryred">Send</button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-col basis-2/3 h-fit"> 
+            
+        </div>
     </div>
 
 </body>

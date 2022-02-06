@@ -17,13 +17,31 @@
 
     <title>Gianfrancogv</title>
 </head>
-<body class="font-poppins">
+<body class="font-poppins px-3 md:px-8 lg:px-16 xl:px-24">
+
+    <!-- Landing Page -->
+    <div class="landing flex items-center py-8 min-h-screen">
+
+        <div class="left-col basis-1/2 min-h-fit">
+            <div class="header text-7xl pb-7 font-bold text-primaryblue">
+                <h1>Better design, better experiences.</h1>
+            </div>
+            <div class="content italic pb-7 text-fontgray">
+                <span class="font-bold text-sm text-secondaryred">-</span> Hi! My name is Gianfranco. I'm a Web Developer buliding awesome web experiences for companies all around the world.
+            </div>
+            <button type="submit" id="button" class="w-48 py-2 bg-secondaryred rounded-lg text-white hover:bg-[#ce3467]">Let's Go! 👇</button>
+        </div>
+        <div class="right-col basis-1/2 max-h-screen flex justify-center">
+            <img style='max-height: 600px; height: 100%; object-fit: contain' src="assets/img/profile.png" alt="Profile picture">
+        </div>
+
+    </div>
 
     <!-- Skills & Experience -->
-    <div class="skills-experience flex items-center px-24 py-8 h-screen">
+    <div class="skills-experience flex items-center py-8 min-h-screen">
 
         <!-- Left Column -->
-        <div class="left-col basis-1/3 h-fit">
+        <div class="left-col basis-1/3 min-h-fit">
 
             <!-- Header H1 -->
             <div class="header text-7xl pb-7 font-bold text-primaryblue">
@@ -32,7 +50,7 @@
 
             <!-- Skills resume text -->
             <div class="content italic pb-7 text-fontgray">
-                <span class="font-bold text-sm text-secondaryred">-</span> Web design and development, solving problems through the user experience, and always improving them in the most professional way possible<span class="not-italic">✌️</span>
+                <span class="font-bold text-sm text-secondaryred">-</span> I always manage time and information productively, acting quickly and decisively to meet customer’s needs. My IT passiond keeps myself in the continual search for learning and professional growth <span class="not-italic">👋</span>
             </div>
 
             <!-- Skills list -->
@@ -141,13 +159,13 @@
         </div>
 
         <!-- Right Column -->
-        <div class="right-col basis-2/3 h-fit pl-20">
+        <div class="right-col basis-2/3 min-h-fit pl-20">
             
             <!-- Subheader H2 -->
             <h2 class="subheader text-4xl font-bold text-primaryblue">Work Experience</h2>
             
             <!-- Experience List Items -->
-            <ol class="experience-grid flex flex-col px-5 pb-5">
+            <ol class="experience-grid flex flex-col px-5">
                 <li class="experience-item list-decimal text-xl font-semibold text-primaryblue border-b-2 border-secondaryred py-5">
                     <h3 class="font-semibold text-xl text-primaryblue">
                         Front-end Developer @ ConvertLabs
@@ -169,7 +187,7 @@
                     <p class="text-sm font-normal text-fontgray">Responsive web page layouts, general front-end web development.<br>Technologies: HTML, CSS, Javascript.</p>
                     <p class="text-sm font-normal text-right italic text-fontgray"><span class="not-italic">🗓️</span> June 2020 - October 2020</p>
                 </li>
-                <li class="experience-item list-decimal font-semibold text-xl text-primaryblue py-5">
+                <li class="experience-item list-decimal font-semibold text-xl text-primaryblue pt-5">
                     <h3 class="font-semibold text-xl text-primaryblue">
                         Graphic Designer (Freelance)
                     </h3>
@@ -184,10 +202,10 @@
     </div>
 
     <!-- Education -->
-    <div class="education flex items-center px-24 py-8 h-screen">
+    <div class="education flex items-center py-8 min-h-screen">
 
         <!-- Left Column -->
-        <div class="left-col basis-1/3 h-fit">
+        <div class="left-col basis-1/3 min-h-fit">
             
             <!-- Header H1 -->
             <div class="header text-7xl pb-7 font-bold text-primaryblue">
@@ -227,7 +245,7 @@
         </div>
 
         <!-- Right Column -->
-        <div class="right-col basis-2/3 pl-20 h-fit">
+        <div class="right-col basis-2/3 pl-20 min-h-fit">
             
             <!-- Education -->
             <ul class="education-list">
@@ -248,7 +266,6 @@
                 </li>
             </ul>
 
-            
             <!-- Languages -->
             <ul class="languages flex-col">
                 <!-- Subheader H2 -->
@@ -256,23 +273,23 @@
                 
                 <!-- languages list items -->
                 <div class="flex flex-row justify-between py-5">
-                    <div class="languages-group flex flex-row px-5 py-2">
+                    <div class="languages-item flex flex-row py-2">
                         <div class="flex flex-col mr-3">
-                            <li class="languages-text items-center text-xl font-semibold text-primaryblue">Spanish</li>
+                            <li class="items-center text-xl font-semibold text-primaryblue">Spanish</li>
                             <p class="text-sm text-fontgray">Native</p>
                         </div>
                         <img width="45" src="assets/img/spanish.svg" alt="spanish">
                     </div>
-                    <div class="languages-group flex flex-row px-5 py-2">
+                    <div class="languages-item flex flex-row py-2">
                         <div class="flex flex-col mr-3">
-                            <li class="languages-text items-center text-xl font-semibold text-primaryblue">English</li>
+                            <li class="items-center text-xl font-semibold text-primaryblue">English</li>
                             <p class="text-sm text-fontgray">Advanced</p>
                         </div>
                         <img width="45" src="assets/img/english.svg" alt="english">
                     </div>
-                    <div class="languages-group flex flex-row px-5 py-2">
+                    <div class="languages-item flex flex-row py-2">
                         <div class="flex flex-col mr-3">
-                            <li class="languages-text items-center text-xl font-semibold text-primaryblue">Italian</li>
+                            <li class="items-center text-xl font-semibold text-primaryblue">Italian</li>
                             <p class="text-sm text-fontgray">Intermediate</p>
                         </div>
                         <img width="45" src="assets/img/italian.svg" alt="italian">
@@ -286,17 +303,21 @@
     </div>
 
     <!-- Portfolio -->
-    <div class="portfolio flex flex-col px-24 py-8 h-screen">
+    <div class="portfolio flex flex-col py-8 min-h-screen justify-center">
 
-        <!-- Header H1 -->
-        <div class="header text-7xl pb-7 font-bold text-primaryblue">
-            <h1>Latest Projects</h1>
+        <div class="header-portfolio">
+            <!-- Header H1 -->
+            <h1 class="header text-7xl pb-7 font-bold text-primaryblue">Latest Projects</h1>
+            <!-- Skills resume text -->
+            <div class="content italic pb-7 text-fontgray max-w-xl">
+                <span class="font-bold text-sm text-secondaryred">-</span> Graphic design, Web design and development, solving problems focused on the User Experience. Always improving in the most professional way possible<span class="not-italic">✌️</span>
+            </div>
         </div>
 
-        <div class="flex h-max">
+        <div class="portfolio-items flex flex-row h-max pb-5">
 
             <!-- First Item -->
-            <div class="portfolio-items mx-5 relative top-60">
+            <div class="portfolio-item mx-5 ">
                 <a href="https://rohanacademy.com/" target="_blank">
                     <h3 class="education-item text-xl font-semibold text-primaryblue border-t-2 border-secondaryred py-3">Rohan Academy</h3>
                     <img class="border-secondaryred border-2" src="assets/img/portfolio/rohan.jpg" alt="rohan">
@@ -304,7 +325,7 @@
                 <p class="text-sm font-normal text-fontgray py-3">Responsive website with HTML, CSS, Bootstrap and Javascript.</p>
             </div>
             <!-- Second Item -->
-            <div class="portfolio-items mx-5 relative top-40">
+            <div class="portfolio-item mx-5">
                 <a href="https://projects.nerdpilots.com/gian/" target="_blank">
                     <h3 class="education-item text-xl font-semibold text-primaryblue border-t-2 border-secondaryred py-3">The Cleaning House</h3>
                     <img class="border-secondaryred border-2" src="assets/img/portfolio/the-cleaning-co.jpg" alt="The Cleaning House">
@@ -312,7 +333,7 @@
                 <p class="text-sm font-normal text-fontgray py-3">Responsive website created with Wordpress using Elementor.</p>
             </div>
             <!-- Third Item -->
-            <div class="portfolio-items mx-5 relative top-20">
+            <div class="portfolio-item mx-5">
                 <a href="https://residentpet.net/" target="_blank">
                     <h3 class="education-item text-xl font-semibold text-primaryblue border-t-2 border-secondaryred py-3">Resident Pet</h3>
                     <img class="border-secondaryred border-2" src="assets/img/portfolio/resident-pet.jpg" alt="resident pet">
@@ -330,17 +351,39 @@
 
         </div>
 
+        <div class="portfolio-media">
+            <!-- Subheader H2 -->
+            <div class="flex justify-center items-center gap-5">
+                <a href="https://dribbble.com/gianfrancogv" class="flex flex-row items-center">
+                    <img class="portfolio-media-image" src="assets/img/portfolio/dribbble.png" alt="Dribbble">
+                    <!-- <p class="text-sm font-normal text-fontgray">Dribbble</p> -->
+                </a>
+                <a href="https://www.behance.net/gianfrancogv/" class="flex flex-row items-center">
+                    <img class="portfolio-media-image" src="assets/img/portfolio/behance.png" alt="Behance">
+                    <!-- <p class="text-sm font-normal text-fontgray">Behance</p> -->
+                </a>
+                <a href="https://github.com/gianfrancogv" class="flex flex-row items-center">
+                    <img class="portfolio-media-image" src="assets/img/portfolio/github.png" alt="Github">
+                    <!-- <p class="text-sm font-normal text-fontgray">Github</p> -->
+                </a>
+                <a href="https://vercel.com/gianfrancogv" class="flex flex-row items-center">
+                    <img class="portfolio-media-image" src="assets/img/portfolio/vercel.png" alt="Vercel">
+                    <!-- <p class="text-sm font-normal text-fontgray">Vercel</p> -->
+                </a>
+            </div>
+        </div>
+
     </div>
 
     <!-- Contact -->
-    <div class="contact flex px-24 py-8 h-screen">
+    <div class="contact flex items-center py-8 min-h-screen">
 
         <!-- Left Column -->
-        <div class="left-col basis-1/3 h-fit flex flex-col justify-center"> 
+        <div class="left-col basis-2/5 min-h-fit flex flex-col justify-center"> 
 
             <!-- Header -->
-            <div class="header text-7xl font-bold text-primaryblue">
-                <h1>Contact Me</h1>
+            <div class="header text-7xl mb-5 font-bold text-primaryblue">
+                <h1>Let's discuss your project</h1>
             </div>
 
             <!-- Subheader -->
@@ -372,10 +415,51 @@
         </div>
 
         <!-- Right Column -->
-        <div class="right-col basis-2/3 h-fit"> 
-            
+        <div class="right-col basis-3/5 pl-20 h-full"> 
+            <!-- Contact -->
+            <ul class="contact-list">
+                <!-- Subheader H2 -->
+                <h2 class="subheader text-4xl font-bold text-primaryblue">Contact me</h2>
+                <!-- Contact list items -->
+                <li class="contact-item text-xl font-semibold text-primaryblue border-b-2 border-secondaryred py-5">
+                    Email 📧
+                    <p class="text-sm font-normal text-fontgray">gianfrancogv@gmail.com</p>
+                </li>
+                <li class="contact-item text-xl font-semibold text-primaryblue border-b-2 border-secondaryred py-5">
+                    Location 📍
+                    <p class="text-sm font-normal text-fontgray">Frosinone, Italy</p>
+                    <p class="text-sm font-normal text-fontgray">Available to relocate and/or work remotely ✅</p>
+                </li>
+                <li class="contact-item text-xl font-semibold text-primaryblue py-5">
+                    Social Media 📱
+                    <div class="flex flex-col">
+                        <a href="https://twitter.com/GIANFRANCOGV" class="flex flex-row w-fit items-center gap-3 py-3">
+                            <img class="media-image" src="assets/img/media/twitter.png" alt="Twitter">
+                            <p class="text-sm font-normal text-fontgray">Twitter</p>
+                        </a>
+                        <a href="https://www.instagram.com/gianfrancogv/" class="flex flex-row w-fit items-center gap-3 py-3">
+                            <img class="media-image" src="assets/img/media/instagram.png" alt="Instagram">
+                            <p class="text-sm font-normal text-fontgray">Instagram</p>
+                        </a>
+                        <a href="https://www.facebook.com/gianfrancogv/" class="flex flex-row w-fit items-center gap-3 py-3">
+                            <img class="media-image" src="assets/img/media/facebook.png" alt="Facebook">
+                            <p class="text-sm font-normal text-fontgray">Facebook</p>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gianfrancogv/" class="flex flex-row w-fit items-center gap-3 py-3">
+                            <img class="media-image" src="assets/img/media/linkedin.webp" alt="LinkedIn">
+                            <p class="text-sm font-normal text-fontgray">LinkedIn</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </div>
+
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <h6 class="text-center text-sm">GIAN FRANCO GARCIA VINCENZI - © 2022 All rights reserved</h6>
+    </footer>
 
 </body>
 </html>

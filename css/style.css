@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.skill-image {
+.skill-image, .media-image, .portfolio-media-image {
   max-width: 40px;
 }
-.skills li::before, .courses li::before, .education li::before, .languages li::before {
+.skills li::before, .courses li::before, .education-list li::before, .contact li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: #FC5185; /* Change the color */
   font-weight: bold; /* If you want it to be bold */

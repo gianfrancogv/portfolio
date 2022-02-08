@@ -5,13 +5,11 @@
 .skill-image, .media-image, .portfolio-media-image {
   max-width: 40px;
 }
-.skills li::before, .courses li::before, .education-list li::before, .contact li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #FC5185; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
-  padding-right: 1em;
-  font-size: 24px;
+
+.skill-title {
+  font-size: 9px;
+}
+
+.profile-picture {
+  max-width: 250px;
 }

@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.skill-image, .media-image, .portfolio-media-image {
-  max-width: 40px;
+.skill-image, .languages-item img {
+  max-width: 35px;
+}
+
+.media-image, .portfolio-media-image {
+  max-width: 30px;
 }
 
 .skill-title {

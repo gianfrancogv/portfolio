@@ -468,6 +468,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
 .order-2 {
   order: 2;
 }
@@ -507,6 +519,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hidden {
   display: none;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .h-full {
@@ -790,6 +806,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+* {
+  box-sizing: border-box
+}
+
 .skill-image, .languages-item img {
   max-width: 35px;
 }
@@ -807,8 +827,28 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .landing {
-  margin-top: -40px;
+  margin-top: -35px;
 }
+
+/* Portfolio Image Overlay */
+
+/* The overlay effect - lays on top of the container and over the image */
+
+.overlay {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  /* Black see-through */
+  transition: .5s ease;
+  opacity:0;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Media Queries */
 
 @media (max-width: 1024px) {
   .profile-picture {
@@ -816,8 +856,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+/* Dark Mode */
+
 @media (prefers-color-scheme: dark) {
-  .logo, .skill-image, .portfolio-media-image {
+  .logo, .skill-image, .portfolio-media-image, .hamburger {
     filter: brightness(100);
   }
 }

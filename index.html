@@ -35,7 +35,7 @@
                 <a class="hover:text-primaryblue dark:hover:text-secondaryred" href="#contact">Contact</a>
             </div>
             <div class="md:hidden cursor-pointer">
-                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" fill="white"/></svg>
+                <svg class="hamburger" width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" fill="#364F6B"/></svg>
             </div>
         </div>
     </header>
@@ -51,7 +51,7 @@
                 <span class="font-bold text-sm text-secondaryred">-</span> Hi! My name is Gianfranco. I'm a Web Developer, buliding awesome experiences for companies all around the world.
             </div>
             <div class="button flex justify-center lg:justify-start">
-                <button type="submit" id="button" class="w-48 py-2 bg-secondaryred rounded-lg text-white hover:bg-[#ce3467]">Let's Go! 👇</button>
+                <a href="#skills" class="w-48 py-2 bg-secondaryred rounded-lg text-white text-center hover:bg-[#ce3467]">Let's Go! 👇</a>
             </div>
         </div>
         <div class="right-col order-1 lg:order-2 lg:basis-1/2 lg:pl-8 max-h-screen flex justify-end">
@@ -339,39 +339,63 @@
         <div class="portfolio-items grid grid-cols-2 lg:grid-cols-3 gap-3 justify-center items-center max-w-5xl mx-auto py-8">
 
             <!-- First Item -->
-            <div class="portfolio-item">
+            <div class="portfolio-item relative">
                 <a href="https://rohanacademy.com/" target="_blank">
-                    <img class="portfolio-img" src="assets/img/portfolio/rohan.jpg" alt="rohan">
+                    <img class="portfolio-img block w-full h-auto" src="assets/img/portfolio/rohan.jpg" alt="rohan">
+                    <div class="overlay absolute bottom-0 w-full h-full text-center text-white flex flex-col items-center justify-center">
+                        <h5 class="text-md font-bold">ROHAN ACADEMY</h5>
+                        <p class="text-xs">HTML, CSS & JavaScript</p>
+                    </div>
                 </a>
             </div>
             <!-- Second Item -->
-            <div class="portfolio-item">
+            <div class="portfolio-item relative">
                 <a href="https://projects.nerdpilots.com/gian/" target="_blank">
-                    <img class="portfolio-img" src="assets/img/portfolio/the-cleaning-co.jpg" alt="The Cleaning House">
+                    <img class="portfolio-img block w-full h-auto" src="assets/img/portfolio/the-cleaning-co.jpg" alt="The Cleaning House">
+                    <div class="overlay absolute bottom-0 w-full h-full text-center text-white flex flex-col items-center justify-center">
+                        <h5 class="text-md font-bold">THE CLEANING HOUSE Co.</h5>
+                        <p class="text-xs">Wordpress & Elementor</p>
+                    </div>
                 </a>
             </div>
             <!-- Third Item -->
-            <div class="portfolio-item">
+            <div class="portfolio-item relative">
                 <a href="https://residentpet.net/" target="_blank">
-                    <img class="portfolio-img" src="assets/img/portfolio/resident-pet.jpg" alt="resident pet">
+                    <img class="portfolio-img block w-full h-auto" src="assets/img/portfolio/resident-pet.jpg" alt="resident pet">
+                    <div class="overlay absolute bottom-0 w-full h-full text-center text-white flex flex-col items-center justify-center">
+                        <h5 class="text-md font-bold">RESIDENT PET</h5>
+                        <p class="text-xs">Wordpress</p>
+                    </div>
                 </a>
             </div>
             <!-- Fourth Item -->
-            <div class="portfolio-item">
+            <div class="portfolio-item relative">
                 <a href="https://convertlabs.io/" target="_blank">
-                    <img class="portfolio-img" src="assets/img/portfolio/convertlabs.jpg" alt="convertlabs">
+                    <img class="portfolio-img block w-full h-auto" src="assets/img/portfolio/convertlabs.jpg" alt="convertlabs">
+                    <div class="overlay absolute bottom-0 w-full h-full text-center text-white flex flex-col items-center justify-center">
+                        <h5 class="text-md font-bold">CONVERTLABS</h5>
+                        <p class="text-xs">HTML, CSS & JavaScript</p>
+                    </div>
                 </a>
             </div>
             <!-- Fifth Item -->
-            <div class="portfolio-item">
+            <div class="portfolio-item relative">
                 <a href="https://easyhire.io/" target="_blank">
-                    <img class="portfolio-img" src="assets/img/portfolio/easyhire.jpg" alt="easyhire">
+                    <img class="portfolio-img block w-full h-auto" src="assets/img/portfolio/easyhire.jpg" alt="easyhire">
+                    <div class="overlay absolute bottom-0 w-full h-full text-center text-white flex flex-col items-center justify-center">
+                        <h5 class="text-md font-bold">EASY HIRE</h5>
+                        <p class="text-xs">HTML, CSS & JavaScript</p>
+                    </div>
                 </a>
             </div>
             <!-- Sixth Item -->
-            <div class="portfolio-item">
+            <div class="portfolio-item relative">
                 <a href="https://reservando.vercel.app/html" target="_blank">
                     <img class="portfolio-img" src="assets/img/portfolio/reservando.jpg" alt="reservando">
+                    <div class="overlay absolute bottom-0 w-full h-full text-center text-white flex flex-col items-center justify-center">
+                        <h5 class="text-md font-bold">RESERVANDO</h5>
+                        <p class="text-xs">HTML, CSS & JavaScript</p>
+                    </div>
                 </a>
             </div>
 
@@ -463,13 +487,13 @@
                             <img class="media-image" src="assets/img/media/twitter.png" alt="Twitter">
                             <p class="hidden lg:block text-sm font-normal text-fontgray dark:text-white">Twitter</p>
                         </a>
-                        <a href="https://www.instagram.com/gianfrancogv/" class="flex flex-row w-fit items-center gap-3 py-3">
-                            <img class="media-image" src="assets/img/media/instagram.png" alt="Instagram">
-                            <p class="hidden lg:block text-sm font-normal text-fontgray dark:text-white">Instagram</p>
-                        </a>
                         <a href="https://www.facebook.com/gianfrancogv/" class="flex flex-row w-fit items-center gap-3 py-3">
                             <img class="media-image" src="assets/img/media/facebook.png" alt="Facebook">
                             <p class="hidden lg:block text-sm font-normal text-fontgray dark:text-white">Facebook</p>
+                        </a>
+                        <a href="https://www.instagram.com/gianfrancogv/" class="flex flex-row w-fit items-center gap-3 py-3">
+                            <img class="media-image" src="assets/img/media/instagram.png" alt="Instagram">
+                            <p class="hidden lg:block text-sm font-normal text-fontgray dark:text-white">Instagram</p>
                         </a>
                         <a href="https://www.linkedin.com/in/gianfrancogv/" class="flex flex-row w-fit items-center gap-3 py-3">
                             <img class="media-image" src="assets/img/media/linkedin.webp" alt="LinkedIn">

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+* {box-sizing: border-box}
+
 .skill-image, .languages-item img {
   max-width: 35px;
 }
@@ -19,17 +21,34 @@
 }
 
 .landing {
-  margin-top: -40px;
+  margin-top: -35px;
 }
 
+/* Portfolio Image Overlay */
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  transition: .5s ease;
+  opacity:0;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Media Queries */
 @media (max-width: 1024px) {
   .profile-picture {
     max-width: 300px;
   }
 }
 
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
-  .logo, .skill-image, .portfolio-media-image {
+  .logo, .skill-image, .portfolio-media-image, .hamburger {
     filter: brightness(100);
   }
 }

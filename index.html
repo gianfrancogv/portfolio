@@ -18,7 +18,7 @@
     <title>Gianfrancogv</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 </head>
-<body class="bg-white dark:bg-black font-poppins px-3 md:px-8 lg:px-16 xl:px-24">
+<body class="bg-white dark:bg-black font-poppins px-3 md:px-8 lg:px-16 xl:px-24 2xl:px-36">
 
     <!-- Header -->
     <header class="py-4 bg-white dark:bg-black">
@@ -51,7 +51,7 @@
                 <span class="font-bold text-sm text-secondaryred">-</span> Hi! My name is Gianfranco. I'm a Web Developer, buliding awesome experiences for companies all around the world.
             </div>
             <div class="button flex justify-center lg:justify-start">
-                <a href="#skills" class="w-48 py-2 bg-secondaryred rounded-lg text-white text-center hover:bg-[#ce3467]">Let's Go! 👇</a>
+                <a href="#skills" class="w-48 py-2 bg-secondaryred rounded-lg text-white font-bold text-center hover:bg-[#ce3467]">Let's Go! 👇</a>
             </div>
         </div>
         <div class="right-col order-1 lg:order-2 lg:basis-1/2 lg:pl-8 max-h-screen flex justify-end">
@@ -266,24 +266,25 @@
         </div>
 
         <!-- Right Column -->
-        <div class="right-col lg:basis-2/3 lg:pl-20 min-h-fit">
+        <div class="right-col lg:basis-2/3 lg:min-h-fit lg:pl-20 w-full">
+
+            <!-- Subheader H2 -->
+            <h2 class="subheader text-2xl lg:text-4xl font-bold text-primaryblue dark:text-secondaryred">Education</h2>
             
             <!-- Education -->
-            <ol class="education-list pb-8 pl-3 md:pl-0">
-                <!-- Subheader H2 -->
-                <h2 class="subheader text-2xl lg:text-4xl font-bold text-primaryblue dark:text-secondaryred">Education</h2>
+            <ol class="education-list pb-8 flex flex-col pl-3 lg:pl-5">
                 <!-- Education list items -->
-                <li class="education-item text-base lg:text-xl font-semibold list-decimal marker:text-primaryblue dark:marker:text-secondaryred text-primaryblue dark:text-white border-b border-secondaryred border-opacity-30 py-5">
-                    Civil Engineering
-                    <p class="text-xs lg:text-sm font-normal text-fontgray dark:text-white">6/10 blocks completed (all basic engineering branches). Concerning technology: Basic fundamentals of programming and sofware engineering, databases, C++ language.</p>
-                    <p class="pt-3 text-xs lg:text-sm font-normal text-right italic text-fontgray dark:text-white"><span class="not-italic">📍</span> Universidad del Táchira UNET - Venezuela</p>
-                    <p class="text-xs lg:text-sm font-normal text-right italic text-fontgray dark:text-white"><span class="not-italic">🗓️</span> 2008 - 2014 (Abandoned)</p>
-                </li>
                 <li class="education-item text-base lg:text-xl font-semibold list-decimal marker:text-primaryblue dark:marker:text-secondaryred text-primaryblue dark:text-white border-b border-secondaryred border-opacity-30 py-5">
                     Full-Stack Web Development
                     <p class="text-xs lg:text-sm font-normal text-fontgray dark:text-white">HTML, CSS, Javascript. Responsive design. jQuery. Databases management with MySQL, back-end with node.js and express.js. Object-oriented programming, design patterns, APIs, testing with Mocha and Chai, Git and Github. Certified career by big companies like Mercadolibre and Globant.</p>
                     <p class="pt-3 text-xs lg:text-sm font-normal text-right italic text-fontgray dark:text-white"><span class="not-italic">📍</span> Acámica - Buenos Aires, Argentina</p>
                     <p class="text-xs lg:text-sm font-normal text-right italic text-fontgray dark:text-white"><span class="not-italic">🗓️</span> September 2018 - June 2019</p>
+                </li>
+                <li class="education-item text-base lg:text-xl font-semibold list-decimal marker:text-primaryblue dark:marker:text-secondaryred text-primaryblue dark:text-white border-b border-secondaryred border-opacity-30 py-5">
+                    Civil Engineering
+                    <p class="text-xs lg:text-sm font-normal text-fontgray dark:text-white">6/10 blocks completed (all basic engineering branches). Concerning technology: Basic fundamentals of programming and sofware engineering, databases, C++ language.</p>
+                    <p class="pt-3 text-xs lg:text-sm font-normal text-right italic text-fontgray dark:text-white"><span class="not-italic">📍</span> Universidad del Táchira UNET - Venezuela</p>
+                    <p class="text-xs lg:text-sm font-normal text-right italic text-fontgray dark:text-white"><span class="not-italic">🗓️</span> 2008 - 2014 (Abandoned)</p>
                 </li>
             </ol>
 
@@ -291,30 +292,36 @@
             <ul class="languages flex-col">
                 <!-- Subheader H2 -->
                 <h2 class="subheader text-2xl lg:text-4xl font-bold text-primaryblue dark:text-secondaryred">Languages</h2>
-                
-                <!-- languages list items -->
-                <div class="flex flex-col lg:flex-row justify-between pt-5">
-                    <li class="languages-item flex py-2">
-                        <img width="45" src="assets/img/spanish.svg" alt="spanish">
-                        <div class="flex flex-col ml-3">
-                            <div class="items-center text-base lg:text-xl font-semibold text-primaryblue dark:text-white">Spanish</div>
-                            <p class="text-xs lg:text-sm text-fontgray dark:text-white">Native</p>
-                        </div>
-                    </li>
-                    <li class="languages-item flex py-2">
-                        <img width="45" src="assets/img/english.svg" alt="english">
-                        <div class="flex flex-col ml-3">
-                            <div class="items-center text-base lg:text-xl font-semibold text-primaryblue dark:text-white">English</div>
-                            <p class="text-xs lg:text-sm text-fontgray dark:text-white">Advanced</p>
-                        </div>
-                    </li>
-                    <li class="languages-item flex py-2">
-                        <img width="45" src="assets/img/italian.svg" alt="italian">
-                        <div class="flex flex-col ml-3">
-                            <div class="items-center text-base lg:text-xl font-semibold text-primaryblue dark:text-white">Italian</div>
-                            <p class="text-xs lg:text-sm text-fontgray dark:text-white">Intermediate</p>
-                        </div>
-                    </li>
+
+                <div class="flex justify-between lg:block">
+                    <!-- languages list items -->
+                    <div class="flex flex-col lg:flex-row justify-between pt-5">
+                        <li class="languages-item flex py-2">
+                            <img width="45" src="assets/img/spanish.svg" alt="spanish">
+                            <div class="flex flex-col ml-3">
+                                <div class="items-center text-base lg:text-xl font-semibold text-primaryblue dark:text-white">Spanish</div>
+                                <p class="text-xs lg:text-sm text-fontgray dark:text-white">Native</p>
+                            </div>
+                        </li>
+                        <li class="languages-item flex py-2">
+                            <img width="45" src="assets/img/english.svg" alt="english">
+                            <div class="flex flex-col ml-3">
+                                <div class="items-center text-base lg:text-xl font-semibold text-primaryblue dark:text-white">English</div>
+                                <p class="text-xs lg:text-sm text-fontgray dark:text-white">Advanced</p>
+                            </div>
+                        </li>
+                        <li class="languages-item flex py-2">
+                            <img width="45" src="assets/img/italian.svg" alt="italian">
+                            <div class="flex flex-col ml-3">
+                                <div class="items-center text-base lg:text-xl font-semibold text-primaryblue dark:text-white">Italian</div>
+                                <p class="text-xs lg:text-sm text-fontgray dark:text-white">Intermediate</p>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="languages-image flex justify-end lg:hidden flex-grow px-5">
+                        <img src="assets/img/languages.png" alt="Travel">
+                    </div>
                 </div>
 
             </ul>
@@ -404,19 +411,19 @@
         <div class="portfolio-media">
             <!-- Subheader H2 -->
             <div class="flex justify-center items-center gap-5">
-                <a href="https://dribbble.com/gianfrancogv" class="flex flex-row items-center">
+                <a href="https://dribbble.com/gianfrancogv" class="flex flex-row items-center" target="_blank">
                     <img class="portfolio-media-image" src="assets/img/portfolio/dribbble.png" alt="Dribbble">
                     <!-- <p class="text-sm font-normal text-fontgray">Dribbble</p> -->
                 </a>
-                <a href="https://www.behance.net/gianfrancogv/" class="flex flex-row items-center">
+                <a href="https://www.behance.net/gianfrancogv/" class="flex flex-row items-center" target="_blank">
                     <img class="portfolio-media-image" src="assets/img/portfolio/behance.png" alt="Behance">
                     <!-- <p class="text-sm font-normal text-fontgray">Behance</p> -->
                 </a>
-                <a href="https://github.com/gianfrancogv" class="flex flex-row items-center">
+                <a href="https://github.com/gianfrancogv" class="flex flex-row items-center" target="_blank">
                     <img class="portfolio-media-image" src="assets/img/portfolio/github.png" alt="Github">
                     <!-- <p class="text-sm font-normal text-fontgray">Github</p> -->
                 </a>
-                <a href="https://vercel.com/gianfrancogv" class="flex flex-row items-center">
+                <a href="https://vercel.com/gianfrancogv" class="flex flex-row items-center" target="_blank">
                     <img class="portfolio-media-image" src="assets/img/portfolio/vercel.png" alt="Vercel">
                     <!-- <p class="text-sm font-normal text-fontgray">Vercel</p> -->
                 </a>
@@ -426,10 +433,10 @@
     </div>
 
     <!-- Contact -->
-    <div class="contact lg:flex items-center justify-center py-8" id="contact">
+    <div class="contact lg:flex items-center justify-center pt-8" id="contact">
 
         <!-- Left Column -->
-        <div class="left-col basis-1/2 pb-8 lg:pb-0"> 
+        <div class="left-col basis-1/2 pb-8"> 
 
             <!-- Header -->
             <div class="header text-4xl lg:text-7xl pb-3 lg:pb-7 font-bold text-primaryblue dark:text-secondaryred">
@@ -482,21 +489,21 @@
                 </li>
                 <li class="contact-item text-md lg:text-xl font-semibold text-primaryblue dark:text-white list-disc marker:text-primaryblue dark:marker:text-secondaryred py-5">
                     Social Media 📱
-                    <div class="flex lg:flex-col justify-center gap-3 lg:gap-0">
-                        <a href="https://twitter.com/GIANFRANCOGV" class="flex flex-row w-fit items-center gap-3 py-3">
-                            <img class="media-image" src="assets/img/media/twitter.png" alt="Twitter">
-                            <p class="hidden lg:block text-sm font-normal text-fontgray dark:text-white">Twitter</p>
-                        </a>
-                        <a href="https://www.facebook.com/gianfrancogv/" class="flex flex-row w-fit items-center gap-3 py-3">
+                    <div class="flex lg:flex-col justify-center gap-5 lg:gap-0 pt-3 pt:lg-0">
+                        <a href="https://www.facebook.com/gianfrancogv/" class="flex flex-row w-fit items-center gap-3 py-3" target="_blank">
                             <img class="media-image" src="assets/img/media/facebook.png" alt="Facebook">
                             <p class="hidden lg:block text-sm font-normal text-fontgray dark:text-white">Facebook</p>
                         </a>
-                        <a href="https://www.instagram.com/gianfrancogv/" class="flex flex-row w-fit items-center gap-3 py-3">
+                        <a href="https://twitter.com/GIANFRANCOGV" class="flex flex-row w-fit items-center gap-3 py-3" target="_blank">
+                            <img class="media-image" src="assets/img/media/twitter.png" alt="Twitter">
+                            <p class="hidden lg:block text-sm font-normal text-fontgray dark:text-white">Twitter</p>
+                        </a>
+                        <a href="https://www.instagram.com/gianfrancogv/" class="flex flex-row w-fit items-center gap-3 py-3" target="_blank">
                             <img class="media-image" src="assets/img/media/instagram.png" alt="Instagram">
                             <p class="hidden lg:block text-sm font-normal text-fontgray dark:text-white">Instagram</p>
                         </a>
-                        <a href="https://www.linkedin.com/in/gianfrancogv/" class="flex flex-row w-fit items-center gap-3 py-3">
-                            <img class="media-image" src="assets/img/media/linkedin.webp" alt="LinkedIn">
+                        <a href="https://www.linkedin.com/in/gianfrancogv/" class="flex flex-row w-fit items-center gap-3 py-3" target="_blank">
+                            <img class="media-image" src="assets/img/media/linkedin.png" alt="LinkedIn">
                             <p class="hidden lg:block text-sm font-normal text-fontgray dark:text-white">LinkedIn</p>
                         </a>
                     </div>
@@ -507,7 +514,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="py-2">
+    <footer class="py-2 lg:pt-10">
         <h6 class="text-center text-xs lg:text-sm dark:text-white">GIAN FRANCO GARCIA VINCENZI - © 2022 All rights reserved</h6>
     </footer>
 

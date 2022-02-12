@@ -561,6 +561,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 64rem;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .basis-2\/6 {
   flex-basis: 33.333333%;
 }
@@ -695,6 +699,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.75rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pt-7 {
   padding-top: 1.75rem;
 }
@@ -717,6 +726,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .pb-3 {
@@ -830,9 +843,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: -35px;
 }
 
-/* Portfolio Image Overlay */
+.languages-image {
+  max-height: 200px;
+}
 
-/* The overlay effect - lays on top of the container and over the image */
+.languages-image img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* Portfolio Image Overlay */
 
 .overlay {
   background: rgb(0, 0, 0);
@@ -841,8 +863,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition: .5s ease;
   opacity:0;
 }
-
-/* When you mouse over the container, fade in the overlay title */
 
 .portfolio-item:hover .overlay {
   opacity: 1;
@@ -859,7 +879,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* Dark Mode */
 
 @media (prefers-color-scheme: dark) {
-  .logo, .skill-image, .portfolio-media-image, .hamburger {
+  .logo, .skill-image, .portfolio-media-image, .media-image, .hamburger {
     filter: brightness(100);
   }
 }
@@ -978,6 +998,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: flex;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:min-h-fit {
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
@@ -1045,6 +1069,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 1.75rem;
   }
 
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -1089,5 +1117,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xl\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
   }
 }

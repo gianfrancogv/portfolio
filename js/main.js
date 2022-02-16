@@ -5,5 +5,5 @@ let menuIcon = document.getElementById('menu-icon');
 function toggle () {
     setTimeout(() => {
         menuIcon.checked = !menuIcon.checked;
-    }, 200);
+    }, 300);
 }

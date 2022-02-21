@@ -1337,16 +1337,16 @@ html {
     padding-left: 1.25rem;
   }
 
+  .lg\:pt-16 {
+    padding-top: 4rem;
+  }
+
   .lg\:pb-7 {
     padding-bottom: 1.75rem;
   }
 
   .lg\:pt-10 {
     padding-top: 2.5rem;
-  }
-
-  .lg\:pt-16 {
-    padding-top: 4rem;
   }
 
   .lg\:text-left {
@@ -1400,5 +1400,15 @@ html {
   .\32xl\:px-36 {
     padding-left: 9rem;
     padding-right: 9rem;
+  }
+
+  .\32xl\:px-48 {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  .\32xl\:px-56 {
+    padding-left: 14rem;
+    padding-right: 14rem;
   }
 }
